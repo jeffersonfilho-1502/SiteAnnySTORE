@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="Barra Intensa 70%">
+  <rect width="640" height="480" fill="#2b140f"/>
+  <rect x="130" y="120" width="380" height="240" rx="22" fill="#7a4a35"/>
+  <g fill="#3d2318">
+    <rect x="165" y="155" width="85" height="70" rx="8"/>
+    <rect x="260" y="155" width="85" height="70" rx="8"/>
+    <rect x="355" y="155" width="85" height="70" rx="8"/>
+    <rect x="165" y="235" width="85" height="70" rx="8"/>
+    <rect x="260" y="235" width="85" height="70" rx="8"/>
+    <rect x="355" y="235" width="85" height="70" rx="8"/>
+  </g>
+  <text x="320" y="430" fill="#fff4e6" text-anchor="middle" font-size="32" font-family="Segoe UI, Arial">Barra Intensa 70%</text>
+</svg>
+

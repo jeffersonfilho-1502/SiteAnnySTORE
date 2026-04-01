@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="Conjunto Linho Natural">
+  <rect width="640" height="480" fill="#fff1f8"/>
+  <rect x="120" y="80" width="400" height="320" rx="24" fill="#edd4e3"/>
+  <rect x="190" y="150" width="110" height="160" rx="16" fill="#a576b7"/>
+  <rect x="340" y="150" width="110" height="160" rx="16" fill="#b56a8f"/>
+  <path d="M250 150 L245 320" stroke="#f7e1ed" stroke-width="8"/>
+  <path d="M400 150 L395 320" stroke="#f7e1ed" stroke-width="8"/>
+  <text x="320" y="438" text-anchor="middle" fill="#4f2e66" font-size="30" font-family="Segoe UI, Arial">Conjunto Linho Natural</text>
+</svg>
+

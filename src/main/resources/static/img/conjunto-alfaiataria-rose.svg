@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="Conjunto Alfaiataria Rose">
+  <rect width="640" height="480" fill="#fceaf4"/>
+  <rect x="110" y="70" width="420" height="340" rx="24" fill="#efd0e2"/>
+  <rect x="170" y="150" width="130" height="170" rx="16" fill="#6b3f6a"/>
+  <rect x="340" y="150" width="130" height="170" rx="16" fill="#845172"/>
+  <rect x="210" y="130" width="220" height="40" rx="12" fill="#d996b7"/>
+  <text x="320" y="438" text-anchor="middle" fill="#4f2e66" font-size="30" font-family="Segoe UI, Arial">Conjunto Alfaiataria Rose</text>
+</svg>
+

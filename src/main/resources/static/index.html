@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USE ANNY STORE | Moda Feminina</title>
+    <meta name="description" content="USE ANNY STORE - t-shirts e pijamas femininos confortaveis, estilosos e com preco justo.">
+    <link rel="icon" type="image/svg+xml" href="./img/logo-use-anny.svg">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#home">Pular para conteudo</a>
+<div class="announcement" role="status" aria-live="polite">Troca facil em 7 dias | Frete gratis em compras acima de R$ 35 | Pagamento 100% seguro</div>
+<header class="topbar">
+    <div class="container nav-wrap">
+        <a class="brand" href="#home">
+            <img class="brand-logo" src="./img/logo-use-anny.svg" alt="Logo USE ANNY STORE">
+        </a>
+        <nav class="nav" id="mainNav" aria-label="Navegacao principal">
+            <a href="./busca.html">Buscar</a>
+            <a href="#categorias">Categorias</a>
+            <a href="#destaques">Destaques</a>
+            <a href="#kits">Kits</a>
+            <a href="#sobre">Sobre</a>
+            <a href="./meus-pedidos.html">Meus pedidos</a>
+        </nav>
+        <div class="top-actions">
+            <button class="theme-btn" id="themeToggle" aria-label="Alternar tema">Tema</button>
+            <button class="cart-btn" id="openCartBtn" aria-label="Abrir carrinho" aria-controls="cartDrawer" aria-expanded="false">
+                Carrinho <span class="cart-count" id="cartCount">0</span>
+            </button>
+            <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">Menu</button>
+        </div>
+    </div>
+</header>
+
+<main id="home">
+    <div class="container breadcrumbs" aria-label="Breadcrumb">
+        <a href="./index.html">Inicio</a>
+        <span aria-hidden="true">/</span>
+        <span>Vitrine</span>
+    </div>
+    <section class="hero">
+        <div class="container hero-grid">
+            <div>
+                <p class="eyebrow">Colecao Feminina 2026</p>
+                <h1>Looks femininos elegantes para destacar sua personalidade.</h1>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#destaques">Comprar agora</a>
+                    <a class="btn btn-light" href="#kits">Ver colecao</a>
+                </div>
+                <div class="hero-metrics" aria-label="Destaques da loja">
+                    <p>🤩 | T shirts estilosas e confortáveis</p>
+                    <p>✨ | Qualidade e preço justo</p>
+                    <p>🛍️ | Loja online</p>
+                </div>
+            </div>
+            <div class="hero-card" aria-hidden="true">
+                <div class="badge">Novo</div>
+                <h2>Conjunto Elegance Rose</h2>
+                <p>Blazer estruturado + calca wide leg</p>
+                <strong>R$ 239,90</strong>
+            </div>
+        </div>
+    </section>
+
+    <section id="categorias" class="section container">
+        <h2>Categorias</h2>
+        <div class="cards-3">
+            <article class="card">
+                <h3>T-shirts Zara</h3>
+                <p>Linha inspirada em cortes modernos e acabamento premium.</p>
+            </article>
+            <article class="card">
+                <h3>Regatas</h3>
+                <p>Leves, frescas e confortaveis para dias quentes.</p>
+            </article>
+            <article class="card">
+                <h3>Pijamas</h3>
+                <p>Pecas macias para descanso com toque fashion.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="destaques" class="section section-alt">
+        <div class="container">
+            <h2>Mais vendidos</h2>
+            <p class="section-intro">Filtre por categoria e preco para montar seu look ideal.</p>
+            <div class="catalog-controls" aria-label="Controles de catalogo">
+                <label>
+                    Buscar
+                    <input id="searchInput" type="search" placeholder="Ex.: t-shirt oversized, pijama longo">
+                </label>
+                <label>
+                    Categoria
+                    <select id="categorySelect">
+                        <option value="all">Todas</option>
+                        <option value="tshirts">T-shirts</option>
+                        <option value="tshirts-zara">T-shirts Zara</option>
+                        <option value="regatas">Regatas</option>
+                        <option value="pijamas">Pijamas</option>
+                    </select>
+                </label>
+                <label>
+                    Tamanho
+                    <select id="sizeSelect">
+                        <option value="all">Todos</option>
+                        <option value="PP">PP</option>
+                        <option value="P">P</option>
+                        <option value="M">M</option>
+                        <option value="G">G</option>
+                        <option value="GG">GG</option>
+                    </select>
+                </label>
+                <label>
+                    Cor
+                    <select id="colorSelect">
+                        <option value="all">Todas</option>
+                        <option value="rosa">Rosa</option>
+                        <option value="lilas">Lilas</option>
+                        <option value="off-white">Off-white</option>
+                        <option value="preto">Preto</option>
+                        <option value="bege">Bege</option>
+                    </select>
+                </label>
+                <label>
+                    Ordenar
+                    <select id="sortSelect">
+                        <option value="featured">Destaque</option>
+                        <option value="price-asc">Menor preco</option>
+                        <option value="price-desc">Maior preco</option>
+                        <option value="name-asc">Nome A-Z</option>
+                    </select>
+                </label>
+                <button class="btn btn-light-dark" id="resetFiltersBtn" type="button">Limpar filtros</button>
+            </div>
+            <p class="result-count" id="resultCount">4 produtos encontrados</p>
+            <div class="cards-4" id="productGrid"></div>
+            <p class="empty-state" id="emptyState" hidden>Nenhum produto encontrado com os filtros atuais.</p>
+            <div class="load-more-wrap">
+                <button class="btn btn-light-dark" id="loadMoreBtn" type="button">Carregar mais</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="novidades" class="section container">
+        <h2>Novidades da semana</h2>
+        <p class="section-intro">Selecao especial com pecas recem-chegadas e estoque limitado.</p>
+        <div class="cards-4" id="weeklyGrid"></div>
+        <p class="empty-state" id="weeklyEmpty" hidden>Nenhuma novidade disponivel no momento.</p>
+    </section>
+
+    <section id="kits" class="section container">
+        <h2>Ofertas especiais</h2>
+        <div class="promo">
+            <div>
+                <h3>Compre 2 pecas e ganhe 15% na terceira</h3>
+                <p>Oferta valida para compras online ate domingo.</p>
+            </div>
+            <a class="btn btn-primary" href="#">Aproveitar oferta</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="section container">
+        <h2>Nossa historia</h2>
+        <p class="about">A USE ANNY STORE nasceu para valorizar o estilo feminino com pecas modernas, confortaveis e elegantes. Este layout foi criado de forma autoral, inspirado no segmento premium de moda feminina.</p>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container testimonials">
+            <h2>Quem compra recomenda</h2>
+            <div class="cards-3">
+                <article class="card quote-card">
+                    <p>"Modelagem impecavel e tecido de qualidade. Virou minha loja favorita."</p>
+                    <strong>- Ana Paula, SP</strong>
+                </article>
+                <article class="card quote-card">
+                    <p>"Comprei para um evento e o look ficou perfeito. Entrega muito rapida."</p>
+                    <strong>- Juliana, RJ</strong>
+                </article>
+                <article class="card quote-card">
+                    <p>"Filtros ajudam muito e o caimento das pecas superou minhas expectativas."</p>
+                    <strong>- Camila, MG</strong>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section container">
+        <div class="newsletter-box">
+            <div>
+                <h2>Receba lancamentos e cupons</h2>
+                <p>Cadastre seu email para ofertas exclusivas e novidades da USE ANNY STORE.</p>
+            </div>
+            <form id="newsletterForm" class="newsletter-form" novalidate>
+                <label for="newsletterEmail">Email</label>
+                <input id="newsletterEmail" type="email" placeholder="voce@exemplo.com" required>
+                <button class="btn btn-primary" type="submit">Quero receber</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-grid">
+        <p>© 2026 USE ANNY STORE. Todos os direitos reservados.</p>
+        <div class="footer-links">
+            <a href="#sobre">Quem somos</a>
+            <a href="#">Trocas e devolucoes</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contato</a>
+        </div>
+        <div class="footer-social">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="TikTok">TikTok</a>
+            <a href="#" aria-label="Pinterest">Pinterest</a>
+        </div>
+        <p>Atendimento: contato@useannystore.com</p>
+    </div>
+</footer>
+
+<aside class="cart-drawer" id="cartDrawer" aria-label="Carrinho" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="cart-header">
+        <h3>Seu carrinho</h3>
+        <button class="close-btn" id="closeCartBtn" aria-label="Fechar carrinho">Fechar</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+        <p id="cartSubtotal">Subtotal: R$ 0,00</p>
+        <p id="cartShipping">Frete: R$ 0,00</p>
+        <p id="cartShippingHint" class="shipping-hint">Adicione itens para calcular o frete.</p>
+        <strong id="cartTotal">Total: R$ 0,00</strong>
+        <button class="btn btn-light-dark" id="checkoutBtn">Finalizar pedido (mock)</button>
+        <button class="btn btn-primary" id="clearCartBtn">Limpar carrinho</button>
+    </div>
+</aside>
+
+<div class="overlay" id="overlay"></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="./js/app.js"></script>
+</body>
+</html>
+

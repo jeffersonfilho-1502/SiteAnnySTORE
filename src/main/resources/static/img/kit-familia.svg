@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="Kit Familia">
+  <rect width="640" height="480" fill="#633626"/>
+  <rect x="110" y="140" width="420" height="220" rx="24" fill="#f2d6ac"/>
+  <rect x="145" y="172" width="120" height="152" rx="14" fill="#8a4e37"/>
+  <rect x="275" y="172" width="90" height="152" rx="14" fill="#b26f49"/>
+  <rect x="375" y="172" width="120" height="152" rx="14" fill="#8a4e37"/>
+  <text x="320" y="430" fill="#fff4e6" text-anchor="middle" font-size="34" font-family="Segoe UI, Arial">Kit Familia</text>
+</svg>
+

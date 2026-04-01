@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="Caixa Presente">
+  <rect width="640" height="480" fill="#5c2a1f"/>
+  <rect x="150" y="150" width="340" height="210" rx="20" fill="#f2d6ac"/>
+  <rect x="307" y="130" width="26" height="230" fill="#8a4e37"/>
+  <rect x="150" y="232" width="340" height="26" fill="#8a4e37"/>
+  <circle cx="320" cy="130" r="34" fill="#d4a55b"/>
+  <text x="320" y="430" fill="#fff4e6" text-anchor="middle" font-size="34" font-family="Segoe UI, Arial">Caixa Presente</text>
+</svg>
+

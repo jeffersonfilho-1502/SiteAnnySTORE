@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus pedidos | USE ANNY STORE</title>
+    <meta name="description" content="Historico de pedidos mock da USE ANNY STORE.">
+    <link rel="icon" type="image/svg+xml" href="./img/logo-use-anny.svg">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#ordersMain">Pular para conteudo</a>
+<div class="announcement" role="status" aria-live="polite">Troca facil em 7 dias | Frete gratis em compras acima de R$ 35 | Pagamento 100% seguro</div>
+<header class="topbar">
+    <div class="container nav-wrap">
+        <a class="brand" href="./index.html">
+            <img class="brand-logo" src="./img/logo-use-anny.svg" alt="Logo USE ANNY STORE">
+        </a>
+        <nav class="nav" id="mainNav" aria-label="Navegacao principal">
+            <a href="./busca.html">Buscar</a>
+            <a href="./index.html#categorias">Categorias</a>
+            <a href="./index.html#destaques">Destaques</a>
+            <a href="./index.html#kits">Kits</a>
+            <a href="./index.html#sobre">Sobre</a>
+            <a href="./meus-pedidos.html">Meus pedidos</a>
+        </nav>
+        <div class="top-actions">
+            <button class="theme-btn" id="themeToggle" aria-label="Alternar tema">Tema</button>
+            <button class="cart-btn" id="openCartBtn" aria-label="Abrir carrinho" aria-controls="cartDrawer" aria-expanded="false">
+                Carrinho <span class="cart-count" id="cartCount">0</span>
+            </button>
+            <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">Menu</button>
+        </div>
+    </div>
+</header>
+
+<main id="ordersMain" class="section">
+    <div class="container">
+        <div class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="./index.html">Inicio</a>
+            <span aria-hidden="true">/</span>
+            <span>Meus pedidos</span>
+        </div>
+        <h1>Meus pedidos</h1>
+        <p>Historico de compras mock realizadas no navegador.</p>
+        <div class="orders-actions">
+            <a class="btn btn-light-dark" href="./index.html#destaques">Continuar comprando</a>
+            <button class="btn btn-primary" id="clearOrdersBtn" type="button">Limpar historico</button>
+        </div>
+        <div class="orders-filters">
+            <label for="orderStatusFilter">Status</label>
+            <select id="orderStatusFilter">
+                <option value="all">Todos</option>
+                <option value="preparo">Em preparo</option>
+                <option value="enviado">Enviado</option>
+                <option value="entregue">Entregue</option>
+                <option value="confirmado">Confirmado</option>
+            </select>
+        </div>
+        <div id="ordersList" class="orders-list"></div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container footer-grid">
+        <p>© 2026 USE ANNY STORE. Todos os direitos reservados.</p>
+        <div class="footer-links">
+            <a href="./index.html#sobre">Quem somos</a>
+            <a href="#">Trocas e devolucoes</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contato</a>
+        </div>
+        <div class="footer-social">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="TikTok">TikTok</a>
+            <a href="#" aria-label="Pinterest">Pinterest</a>
+        </div>
+        <p>Atendimento: contato@useannystore.com</p>
+    </div>
+</footer>
+
+<aside class="cart-drawer" id="cartDrawer" aria-label="Carrinho" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="cart-header">
+        <h3>Seu carrinho</h3>
+        <button class="close-btn" id="closeCartBtn" aria-label="Fechar carrinho">Fechar</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+        <p id="cartSubtotal">Subtotal: R$ 0,00</p>
+        <p id="cartShipping">Frete: R$ 0,00</p>
+        <p id="cartShippingHint" class="shipping-hint">Adicione itens para calcular o frete.</p>
+        <strong id="cartTotal">Total: R$ 0,00</strong>
+        <button class="btn btn-light-dark" id="checkoutBtn">Finalizar pedido (mock)</button>
+        <button class="btn btn-primary" id="clearCartBtn">Limpar carrinho</button>
+    </div>
+</aside>
+
+<div class="overlay" id="overlay"></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="./js/app.js"></script>
+</body>
+</html>
+

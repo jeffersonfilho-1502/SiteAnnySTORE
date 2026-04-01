@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="Caixa Romance">
+  <rect width="640" height="480" fill="#4f1f23"/>
+  <rect x="150" y="150" width="340" height="210" rx="20" fill="#f0c7b8"/>
+  <path d="M320 205c-16-26-62-22-62 16 0 36 62 82 62 82s62-46 62-82c0-38-46-42-62-16z" fill="#8a2331"/>
+  <text x="320" y="430" fill="#ffe8df" text-anchor="middle" font-size="34" font-family="Segoe UI, Arial">Caixa Romance</text>
+</svg>
+

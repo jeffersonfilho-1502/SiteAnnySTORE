@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="Vestido Midi Rose">
+  <rect width="640" height="480" fill="#fbe9f3"/>
+  <rect x="140" y="70" width="360" height="340" rx="26" fill="#f2c8dc"/>
+  <path d="M320 140 L380 220 L350 360 L290 360 L260 220 Z" fill="#b56a8f"/>
+  <circle cx="320" cy="110" r="30" fill="#845172"/>
+  <text x="320" y="438" text-anchor="middle" fill="#4f2e66" font-size="32" font-family="Segoe UI, Arial">Vestido Midi Rose</text>
+</svg>
+

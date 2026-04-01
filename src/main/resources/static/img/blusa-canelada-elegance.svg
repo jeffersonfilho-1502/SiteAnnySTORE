@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="Blusa Canelada Elegance">
+  <rect width="640" height="480" fill="#fcecf6"/>
+  <rect x="150" y="90" width="340" height="300" rx="22" fill="#ecc9dd"/>
+  <path d="M240 170 L285 150 L355 150 L400 170 L380 300 L260 300 Z" fill="#6b3f6a"/>
+  <line x1="300" y1="160" x2="300" y2="300" stroke="#d996b7" stroke-width="6"/>
+  <line x1="340" y1="160" x2="340" y2="300" stroke="#d996b7" stroke-width="6"/>
+  <text x="320" y="438" text-anchor="middle" fill="#4f2e66" font-size="30" font-family="Segoe UI, Arial">Blusa Canelada Elegance</text>
+</svg>
+

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="Vestido Envelope Lilas">
+  <rect width="640" height="480" fill="#f8e7f6"/>
+  <rect x="150" y="80" width="340" height="320" rx="24" fill="#e9c3e8"/>
+  <path d="M300 150 L380 220 L330 360 L255 360 L210 220 Z" fill="#a576b7"/>
+  <path d="M300 150 L240 210 L320 250" fill="none" stroke="#845172" stroke-width="12"/>
+  <text x="320" y="438" text-anchor="middle" fill="#4f2e66" font-size="30" font-family="Segoe UI, Arial">Vestido Envelope Lilas</text>
+</svg>
+

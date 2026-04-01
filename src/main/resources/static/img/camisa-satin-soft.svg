@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="Camisa Satin Soft">
+  <rect width="640" height="480" fill="#faeaf4"/>
+  <rect x="140" y="80" width="360" height="320" rx="24" fill="#f0d1e3"/>
+  <path d="M240 170 L280 140 L360 140 L400 170 L380 320 L260 320 Z" fill="#b56a8f"/>
+  <path d="M320 140 L300 190 L340 190 Z" fill="#fceef6"/>
+  <circle cx="320" cy="220" r="6" fill="#4f2e66"/>
+  <circle cx="320" cy="250" r="6" fill="#4f2e66"/>
+  <circle cx="320" cy="280" r="6" fill="#4f2e66"/>
+  <text x="320" y="438" text-anchor="middle" fill="#4f2e66" font-size="31" font-family="Segoe UI, Arial">Camisa Satin Soft</text>
+</svg>
+

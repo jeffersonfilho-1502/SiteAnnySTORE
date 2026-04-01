@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="Trufa Pistache">
+  <rect width="640" height="480" fill="#3d251f"/>
+  <circle cx="250" cy="240" r="86" fill="#b4c085"/>
+  <circle cx="360" cy="230" r="94" fill="#f2d6ac"/>
+  <circle cx="390" cy="200" r="18" fill="#81904f"/>
+  <circle cx="337" cy="246" r="16" fill="#81904f"/>
+  <text x="320" y="430" fill="#fff4e6" text-anchor="middle" font-size="34" font-family="Segoe UI, Arial">Trufa Pistache</text>
+</svg>
+

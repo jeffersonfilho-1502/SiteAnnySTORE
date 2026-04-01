@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | USE ANNY STORE</title>
+    <meta name="description" content="Checkout mock da USE ANNY STORE.">
+    <link rel="icon" type="image/svg+xml" href="./img/logo-use-anny.svg">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#checkoutMain">Pular para conteudo</a>
+<div class="announcement" role="status" aria-live="polite">Troca facil em 7 dias | Frete gratis em compras acima de R$ 35 | Pagamento 100% seguro</div>
+<header class="topbar">
+    <div class="container nav-wrap">
+        <a class="brand" href="./index.html">
+            <img class="brand-logo" src="./img/logo-use-anny.svg" alt="Logo USE ANNY STORE">
+        </a>
+        <nav class="nav" id="mainNav" aria-label="Navegacao principal">
+            <a href="./busca.html">Buscar</a>
+            <a href="./index.html#categorias">Categorias</a>
+            <a href="./index.html#destaques">Destaques</a>
+            <a href="./index.html#kits">Kits</a>
+            <a href="./index.html#sobre">Sobre</a>
+            <a href="./meus-pedidos.html">Meus pedidos</a>
+        </nav>
+        <div class="top-actions">
+            <button class="theme-btn" id="themeToggle" aria-label="Alternar tema">Tema</button>
+            <button class="cart-btn" id="openCartBtn" aria-label="Abrir carrinho" aria-controls="cartDrawer" aria-expanded="false">
+                Carrinho <span class="cart-count" id="cartCount">0</span>
+            </button>
+            <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">Menu</button>
+        </div>
+    </div>
+</header>
+
+<main id="checkoutMain" class="section">
+    <div class="container checkout-grid">
+        <section>
+            <div class="breadcrumbs" aria-label="Breadcrumb">
+                <a href="./index.html">Inicio</a>
+                <span aria-hidden="true">/</span>
+                <span>Checkout</span>
+            </div>
+            <h1>Finalizar pedido</h1>
+            <p>Preencha os dados abaixo para concluir seu pedido mock.</p>
+            <ol class="checkout-steps" aria-label="Etapas do checkout">
+                <li class="is-active">Dados pessoais</li>
+                <li>Entrega</li>
+                <li>Pagamento</li>
+            </ol>
+            <form id="checkoutForm" class="checkout-form" novalidate>
+                <label>
+                    Nome completo
+                    <input type="text" id="fullName" autocomplete="name" minlength="5" required>
+                </label>
+                <label>
+                    Email
+                    <input type="email" id="email" autocomplete="email" required>
+                </label>
+                <label>
+                    Telefone
+                    <input type="tel" id="phone" autocomplete="tel" inputmode="numeric" required>
+                </label>
+                <label>
+                    CEP
+                    <input type="text" id="zipCode" autocomplete="postal-code" inputmode="numeric" required>
+                </label>
+                <label>
+                    Endereco
+                    <input type="text" id="address" autocomplete="street-address" required>
+                </label>
+                <label>
+                    Complemento (opcional)
+                    <input type="text" id="addressExtra" autocomplete="address-line2">
+                </label>
+                <label>
+                    Tipo de entrega
+                    <select id="deliveryType" required>
+                        <option value="normal">Normal (2 a 5 dias)</option>
+                        <option value="expressa">Expressa (ate 24h)</option>
+                    </select>
+                </label>
+                <label>
+                    Forma de pagamento
+                    <select id="paymentMethod" required>
+                        <option value="">Selecione</option>
+                        <option value="pix">PIX</option>
+                        <option value="cartao">Cartao</option>
+                        <option value="boleto">Boleto</option>
+                    </select>
+                </label>
+                <label>
+                    Observacoes (opcional)
+                    <textarea id="orderNotes" rows="3" maxlength="180" placeholder="Ex.: sem lacos, entregar em horario comercial"></textarea>
+                </label>
+                <button class="btn btn-primary" id="placeOrderBtn" type="submit">Confirmar pedido</button>
+                <p id="checkoutMessage" class="checkout-message" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <aside class="checkout-summary">
+            <h2>Resumo</h2>
+            <div id="checkoutItems"></div>
+            <p id="checkoutShipping">Frete: R$ 0,00</p>
+            <strong id="checkoutTotal">Total: R$ 0,00</strong>
+        </aside>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container footer-grid">
+        <p>© 2026 USE ANNY STORE. Todos os direitos reservados.</p>
+        <div class="footer-links">
+            <a href="./index.html#sobre">Quem somos</a>
+            <a href="#">Trocas e devolucoes</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contato</a>
+        </div>
+        <div class="footer-social">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="TikTok">TikTok</a>
+            <a href="#" aria-label="Pinterest">Pinterest</a>
+        </div>
+        <p>Atendimento: contato@useannystore.com</p>
+    </div>
+</footer>
+
+<aside class="cart-drawer" id="cartDrawer" aria-label="Carrinho" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="cart-header">
+        <h3>Seu carrinho</h3>
+        <button class="close-btn" id="closeCartBtn" aria-label="Fechar carrinho">Fechar</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+        <p id="cartSubtotal">Subtotal: R$ 0,00</p>
+        <p id="cartShipping">Frete: R$ 0,00</p>
+        <p id="cartShippingHint" class="shipping-hint">Adicione itens para calcular o frete.</p>
+        <strong id="cartTotal">Total: R$ 0,00</strong>
+        <button class="btn btn-light-dark" id="checkoutBtn">Finalizar pedido (mock)</button>
+        <button class="btn btn-primary" id="clearCartBtn">Limpar carrinho</button>
+    </div>
+</aside>
+
+<div class="overlay" id="overlay"></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="./js/app.js"></script>
+</body>
+</html>
+

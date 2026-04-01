@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar produtos | USE ANNY STORE</title>
+    <meta name="description" content="Busca global de produtos da USE ANNY STORE.">
+    <link rel="icon" type="image/svg+xml" href="./img/logo-use-anny.svg">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#searchMain">Pular para conteudo</a>
+<div class="announcement" role="status" aria-live="polite">Troca facil em 7 dias | Frete gratis em compras acima de R$ 35 | Pagamento 100% seguro</div>
+<header class="topbar">
+    <div class="container nav-wrap">
+        <a class="brand" href="./index.html">
+            <img class="brand-logo" src="./img/logo-use-anny.svg" alt="Logo USE ANNY STORE">
+        </a>
+        <nav class="nav" id="mainNav" aria-label="Navegacao principal">
+            <a href="./busca.html">Buscar</a>
+            <a href="./index.html#categorias">Categorias</a>
+            <a href="./index.html#destaques">Destaques</a>
+            <a href="./index.html#kits">Kits</a>
+            <a href="./index.html#sobre">Sobre</a>
+            <a href="./meus-pedidos.html">Meus pedidos</a>
+        </nav>
+        <div class="top-actions">
+            <button class="theme-btn" id="themeToggle" aria-label="Alternar tema">Tema</button>
+            <button class="cart-btn" id="openCartBtn" aria-label="Abrir carrinho" aria-controls="cartDrawer" aria-expanded="false">
+                Carrinho <span class="cart-count" id="cartCount">0</span>
+            </button>
+            <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">Menu</button>
+        </div>
+    </div>
+</header>
+
+<main id="searchMain" class="section section-alt">
+    <div class="container">
+        <div class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="./index.html">Inicio</a>
+            <span aria-hidden="true">/</span>
+            <span>Buscar</span>
+        </div>
+        <h1>Buscar produtos</h1>
+        <p class="section-intro">Use os filtros para encontrar t-shirts e pijamas com rapidez.</p>
+        <div class="catalog-controls" aria-label="Controles de catalogo">
+            <label>
+                Buscar
+                <input id="searchInput" type="search" placeholder="Ex.: t-shirt rosa, pijama confortavel">
+            </label>
+            <label>
+                Categoria
+                <select id="categorySelect">
+                    <option value="all">Todas</option>
+                    <option value="tshirts">T-shirts</option>
+                    <option value="tshirts-zara">T-shirts Zara</option>
+                    <option value="regatas">Regatas</option>
+                    <option value="pijamas">Pijamas</option>
+                </select>
+            </label>
+            <label>
+                Tamanho
+                <select id="sizeSelect">
+                    <option value="all">Todos</option>
+                    <option value="PP">PP</option>
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                    <option value="GG">GG</option>
+                </select>
+            </label>
+            <label>
+                Cor
+                <select id="colorSelect">
+                    <option value="all">Todas</option>
+                    <option value="rosa">Rosa</option>
+                    <option value="lilas">Lilas</option>
+                    <option value="off-white">Off-white</option>
+                    <option value="preto">Preto</option>
+                    <option value="bege">Bege</option>
+                </select>
+            </label>
+            <label>
+                Ordenar
+                <select id="sortSelect">
+                    <option value="featured">Destaque</option>
+                    <option value="price-asc">Menor preco</option>
+                    <option value="price-desc">Maior preco</option>
+                    <option value="name-asc">Nome A-Z</option>
+                </select>
+            </label>
+            <button class="btn btn-light-dark" id="resetFiltersBtn" type="button">Limpar filtros</button>
+        </div>
+        <p class="result-count" id="resultCount">0 produto(s) encontrado(s)</p>
+        <div class="cards-4" id="productGrid"></div>
+        <p class="empty-state" id="emptyState" hidden>Nenhum produto encontrado com os filtros atuais.</p>
+        <div class="load-more-wrap">
+            <button class="btn btn-light-dark" id="loadMoreBtn" type="button">Carregar mais</button>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container footer-grid">
+        <p>© 2026 USE ANNY STORE. Todos os direitos reservados.</p>
+        <div class="footer-links">
+            <a href="./index.html#sobre">Quem somos</a>
+            <a href="#">Trocas e devolucoes</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contato</a>
+        </div>
+        <div class="footer-social">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="TikTok">TikTok</a>
+            <a href="#" aria-label="Pinterest">Pinterest</a>
+        </div>
+        <p>Atendimento: contato@useannystore.com</p>
+    </div>
+</footer>
+
+<aside class="cart-drawer" id="cartDrawer" aria-label="Carrinho" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="cart-header">
+        <h3>Seu carrinho</h3>
+        <button class="close-btn" id="closeCartBtn" aria-label="Fechar carrinho">Fechar</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+        <p id="cartSubtotal">Subtotal: R$ 0,00</p>
+        <p id="cartShipping">Frete: R$ 0,00</p>
+        <p id="cartShippingHint" class="shipping-hint">Adicione itens para calcular o frete.</p>
+        <strong id="cartTotal">Total: R$ 0,00</strong>
+        <button class="btn btn-light-dark" id="checkoutBtn">Finalizar pedido (mock)</button>
+        <button class="btn btn-primary" id="clearCartBtn">Limpar carrinho</button>
+    </div>
+</aside>
+
+<div class="overlay" id="overlay"></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="./js/app.js"></script>
+</body>
+</html>
+

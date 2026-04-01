@@ -1,6 +1,10 @@
 # USE ANNY STORE (layout autoral)
 
-Storefront de chocolates com identidade propria, fluxo completo de carrinho -> checkout -> historico, responsivo e com tema claro/escuro.
+Storefront de moda feminina com foco em t-shirts e pijamas, fluxo completo de carrinho -> checkout -> historico, responsivo e com tema claro/escuro.
+
+## Site ao vivo
+
+- `https://jeffersonfilho-1502.github.io/SiteAnnySTORE/`
 
 > Importante: projeto autoral, sem copia literal de marca, assets, textos ou codigo de terceiros.
 
@@ -73,4 +77,3 @@ Abra:
 - `http://localhost:8080/index.html?smoke=1`
 
 Resultado exibido em toast e no console (`console.table`).
-
